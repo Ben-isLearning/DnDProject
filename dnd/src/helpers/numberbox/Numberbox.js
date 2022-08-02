@@ -1,19 +1,16 @@
-const Numberbox = (input) => {
-  let style = {
-    width: "250px",
-  };
+const Numberbox = (props) => {
   return (
     <div>
       <input
-        style={style}
-        id={input}
+        id={props.input}
         type="number"
         required
         min="1"
         max="99999999999999"
         pattern="[0-9]"
+        placeholder={props.input}
       />
-      <label htmlFor={input}>Numberbox</label>
+      <label htmlFor={props.input}>Numberbox</label>
     </div>
   );
 };

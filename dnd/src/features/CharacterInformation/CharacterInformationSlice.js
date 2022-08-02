@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
+import { Store } from "@reduxjs/toolkit";
 
 const initialState = {
   characterName: "Dickins",
@@ -20,7 +21,11 @@ export const characterInformationSlice = createSlice({
   extraReducers: {},
 });
 
-//Actions
+//Action Generators
+
+export const setCharName = (name) => {
+  return { type: "characterInformation/updateCharacterName", payload: name };
+};
 
 //Exports
 
