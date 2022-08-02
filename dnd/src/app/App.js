@@ -3,6 +3,7 @@ import { Counter } from "../features/counter/Counter";
 import "../App.css";
 import Textbox from "../helpers/textbox/Textbox";
 import Numberbox from "../helpers/numberbox/Numberbox";
+import Dropdownbox from "../helpers/dropdownbox/Dropdownbox";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <header className="App-header">
         <Textbox></Textbox>
         <Numberbox></Numberbox>
+        <Dropdownbox></Dropdownbox>
         <br />
         <br />
         <Counter />
