@@ -10,11 +10,11 @@ const Textbox = (input = "hello") => {
         id={input}
         type="text"
         required
-        minlength="1"
-        maxlength="30"
+        minLength="1"
+        maxLength="30"
         pattern="[a-zA-Z]"
       />
-      <label for={input}>Textbox</label>
+      <label htmlFor={input}>Textbox</label>
     </div>
   );
 };

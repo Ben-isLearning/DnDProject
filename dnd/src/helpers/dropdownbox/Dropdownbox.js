@@ -12,7 +12,7 @@ const Dropdownbox = (input) => {
         <option value="erlang">Erlang</option>
       </select>
       <input type="submit" value="Submit" />
-      <label for={input}>Language</label>
+      <label htmlFor={input}>Language</label>
     </form>
   );
 };

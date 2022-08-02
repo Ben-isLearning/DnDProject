@@ -13,7 +13,7 @@ const Numberbox = (input) => {
         max="99999999999999"
         pattern="[0-9]"
       />
-      <label for={input}>Numberbox</label>
+      <label htmlFor={input}>Numberbox</label>
     </div>
   );
 };
