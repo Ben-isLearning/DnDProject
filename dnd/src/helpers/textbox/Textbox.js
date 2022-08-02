@@ -1,10 +1,8 @@
-import CharacterInformation from "../../features/CharacterInformation/CharacterInformation";
-
-const Textbox = () => {
+const Textbox = (props) => {
   return (
     <form action="">
       <input
-        placeholder="abc"
+        placeholder={props.value}
         id="wow"
         type="text"
         required
