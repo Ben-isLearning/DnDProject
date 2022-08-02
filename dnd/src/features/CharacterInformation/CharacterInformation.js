@@ -1,21 +1,10 @@
 import Textbox from "../../helpers/textbox/Textbox";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { selectCharacterInformation } from "./CharacterInformationSlice";
 import Numberbox from "../../helpers/numberbox/Numberbox";
-import { store } from "../../app/store";
 
 const CharacterInformation = () => {
-  const dispatch = useDispatch();
   const characterInformation = useSelector(selectCharacterInformation);
-  const characterName = characterInformation.characterName;
-
-  const exampleListener = () => {
-    console.log(`the level is ${characterInformation.level}`);
-
-    store.subscribe(exampleListener);
-
-    dispatch();
-  };
 
   return (
     <div>
