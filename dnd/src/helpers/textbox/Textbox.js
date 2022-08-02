@@ -3,14 +3,13 @@ const Textbox = (props) => {
     <form action="">
       <input
         placeholder={props.value}
-        id="wow"
+        id={props.id}
         type="text"
         required
         minLength="1"
         maxLength="30"
-        pattern="[a-z|A-Z]"
       />
-      <label htmlFor="wow">Value</label>
+      <label htmlFor={props.id}>Value</label>
     </form>
   );
 };

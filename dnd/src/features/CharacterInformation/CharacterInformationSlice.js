@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
-import { store } from "../../app/store";
 
 const initialState = {
   characterName: "Dickins",
@@ -26,7 +25,6 @@ export const characterInformationSlice = createSlice({
 //Exports
 
 export const selectCharacterInformation = (state) => state.characterInformation;
-export const selectClass = (state) => initialState.class;
 
-export const {} = characterInformationSlice.actions;
+export const { updateCharacterName } = characterInformationSlice.actions;
 export default characterInformationSlice.reducer;

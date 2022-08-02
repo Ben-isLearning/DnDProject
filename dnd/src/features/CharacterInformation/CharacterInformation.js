@@ -1,13 +1,11 @@
 import Textbox from "../../helpers/textbox/Textbox";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { selectCharacterInformation } from "./CharacterInformationSlice";
-import { store } from "../../app/store";
 
 const CharacterInformation = () => {
+  const dispatch = useDispatch();
   const characterInformation = useSelector(selectCharacterInformation);
-  //const characterName = characterInformation.characterName;
-  console.log(characterInformation);
-
+  const characterName = characterInformation.characterName;
   return (
     <div>
       <h1>I like cheese</h1>
@@ -18,7 +16,10 @@ const CharacterInformation = () => {
       <h1>Player: {characterInformation.playerName}</h1>
       <h1>Race: {characterInformation.race}</h1>
 
-      <Textbox value={characterInformation.characterName}></Textbox>
+      <Textbox
+        value={characterInformation.characterName}
+        id={characterInformation.characterName}
+      ></Textbox>
       <Textbox value={characterInformation.class}></Textbox>
     </div>
   );
