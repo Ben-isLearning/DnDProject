@@ -3,18 +3,14 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 import { Counter } from "../features/counter/Counter";
 import "../App.css";
-import Textbox from "../helpers/textbox/Textbox";
-import Numberbox from "../helpers/numberbox/Numberbox";
-import Dropdownbox from "../helpers/dropdownbox/Dropdownbox";
+import CharacterInformation from "../features/CharacterInformation/CharacterInformation";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <CharacterInformation></CharacterInformation>
         <header className="App-header">
-          <Textbox></Textbox>
-          <Numberbox></Numberbox>
-          <Dropdownbox></Dropdownbox>
           <br />
           <br />
           <Counter />

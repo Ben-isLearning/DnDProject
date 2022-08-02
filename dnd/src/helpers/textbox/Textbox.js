@@ -1,21 +1,19 @@
-const Textbox = (input = "hello") => {
-  let style1 = {
-    width: "300px",
-  };
+import CharacterInformation from "../../features/CharacterInformation/CharacterInformation";
 
+const Textbox = () => {
   return (
-    <div>
+    <form action="">
       <input
-        style={style1}
-        id={input}
+        placeholder="abc"
+        id="wow"
         type="text"
         required
         minLength="1"
         maxLength="30"
-        pattern="[a-zA-Z]"
+        pattern="[a-z|A-Z]"
       />
-      <label htmlFor={input}>Textbox</label>
-    </div>
+      <label htmlFor="wow">Value</label>
+    </form>
   );
 };
 
