@@ -2,12 +2,14 @@ import React from "react";
 import { Counter } from "../features/counter/Counter";
 import "../App.css";
 import Textbox from "../helpers/textbox/Textbox";
+import Numberbox from "../helpers/numberbox/Numberbox";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Textbox></Textbox>
+        <Numberbox></Numberbox>
         <br />
         <br />
         <Counter />
